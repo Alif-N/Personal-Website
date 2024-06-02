@@ -407,6 +407,7 @@ span {
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
+    overflow: auto;
     transition: 0.4s ease-in-out;
 }
 
@@ -430,7 +431,8 @@ span {
 .service-info h4 {
     font-size: 3rem;
     font-weight: 800;
-    line-height: 2;
+    margin-bottom: 10px;
+    line-height: 1;
 }
 
 .service-info p {
@@ -505,6 +507,10 @@ span {
 
 #star {
     color: gold;
+    font-size: 2rem;
+}
+
+#star-no {
     font-size: 2rem;
 }
 
@@ -610,7 +616,7 @@ span {
 }
 
 .footer .copyright {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
     color: white;
     font-size: 16px;
@@ -651,6 +657,9 @@ span {
     }
     .services {
         padding-bottom: 7rem;
+    }
+    .service-info h4 {
+        line-height: 1;
     }
     .testimonials .wrapper {
         grid-template-columns: repeat(1,1fr);
@@ -713,5 +722,8 @@ span {
     }
     .services-container {
         grid-template-columns: repeat(1,1fr);
+    }
+    .service-info h4 {
+        line-height: 1;
     }
 }
