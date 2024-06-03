@@ -372,15 +372,17 @@ span {
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track {
     background-color: var(--bg-color);
+    border-radius: 50px;
     width: 50px;
 }
 
@@ -404,11 +406,29 @@ span {
 .service-box {
     background-color: var(--main-color);
     height: 300px;
+    padding: 3px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     overflow: auto;
     transition: 0.4s ease-in-out;
+}
+
+.service-box::-webkit-scrollbar {
+    width: 12px;
+}
+
+.service-box::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.service-box::-webkit-scrollbar-track {
+    background-color: var(--main-color);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 50px;
 }
 
 .service-box:hover {
