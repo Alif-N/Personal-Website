@@ -24,7 +24,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-const scriptURL = 'https://docs.google.com/spreadsheets/d/16nF7vSN-GK97KOqQDcekCMYKze7vQloAW-EBlRofXVc/edit?usp=sharing'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxRTnrqb85F45e2zf7AH_IQw_Vze4FG6vv6qpnhJ7h6KiXFJ3krqHuBU3ZBA8iELSNR/exec'
 const form = document.forms['myForm']
 form.addEventListener('submit', e => {
     e.preventDefault()
