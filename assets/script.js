@@ -23,3 +23,12 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+const scriptURL = 'https://docs.google.com/spreadsheets/d/16nF7vSN-GK97KOqQDcekCMYKze7vQloAW-EBlRofXVc/edit?usp=sharing'
+const form = document.forms['myForm']
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert('Success!'))
+        .catch(error => console.error('Error!', error.message))
+})
